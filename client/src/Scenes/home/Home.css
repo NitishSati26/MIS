@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #4e73df;
+}
+
+/* Header */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    background: #272829;
+    width: 100%;
+    height: 70px;
+}
+
+svg {
+    font-family: "Russo One", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+svg text {
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #365FA0;
+    font-size: 4rem;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(54, 95, 160, 1);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(54, 95, 160, 1);
+    }
+
+    80% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(54, 95, 160, 1);
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: rgba(72, 138, 204, 1);
+        stroke: rgba(54, 95, 160, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+
+.flex-container {
+    background-color: #272829;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.flex-items:nth-child(1) {
+    padding-left: 10px;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: center;
+    order: 0;
+    background-color: #272829;
+    height: 70px;
+}
+
+.flex-items:nth-child(2) {
+    text-align: center;
+
+    margin-left: 65%;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: center;
+    order: 0;
+}
+
+.flex-items:nth-child(3) {
+    padding-left: 20px;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: center;
+    order: 0;
+}
+
+.button-link {
+    display: inline-block;
+    /* Make the anchor an inline block element */
+    text-decoration: none;
+    /* Remove underlines and default link styles */
+    padding: 10px 20px;
+    /* Add padding for content (adjust as needed) */
+    color: #fff;
+    /* Text color */
+    text-align: center;
+    /* Center text horizontally */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    border: 2px solid #A31239;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Add rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for background and text color changes */
+    /* background: #B6EE1D; */
+    background: #0a58ca;
+    /* background: linear-gradient(to top, #B6EE1D, #468CCF); */
+    background: linear-gradient(to top, #0b5ed7, #468CCF);
+
+}
+
+.button-link:hover {
+    color: #14396A !important;
+    background: #B617CF;
+    background: linear-gradient(to top, #B617CF, #63B8EE);
+}
+
+.button-link2 {
+    display: inline-block;
+    /* Make the anchor an inline block element */
+    text-decoration: none;
+    /* Remove underlines and default link styles */
+    padding: 10px 20px;
+    /* Add padding for content (adjust as needed) */
+    color: #fff;
+    /* Text color */
+    text-align: center;
+    /* Center text horizontally */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    border: 2px solid #A31239;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Add rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for background and text color changes */
+    background: #B6EE1D;
+    background: linear-gradient(to top, #B6EE1D, #468CCF);
+}
+
+.button-link2:hover {
+    color: #14396A !important;
+    background: #B617CF;
+    background: linear-gradient(to top, #B617CF, #63B8EE);
+}
+
+/* Content */
+
+.d-block w-100 {
+    overflow: hidden;
+    /* Set the image width to 100% of the container's width */
+    height: auto;
+    /* Automatically adjust the height to maintain aspect ratio */
+    display: block;
+    /* Remove any extra spacing */
+}
+
+img {
+    width: 400px;
+    height: 650px;
+    margin-top: 10px;
+    overflow: hidden;
+}

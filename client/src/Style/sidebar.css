@@ -1,0 +1,26 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: grey;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #555;
+}
+
+.sidebar ul li::before {
+  content: "▶ ";
+  display: inline-block;
+  padding-right: 5px;
+}
